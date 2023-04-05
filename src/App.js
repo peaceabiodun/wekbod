@@ -3,6 +3,7 @@ import HomePage from "pages/HomePage";
 import Signup from "pages/loginPage/signup";
 import Login from "pages/loginPage/login";
 import CreateBio from "pages/createProfilePages/bio";
+import ConatactDetails from "pages/createProfilePages/contactDetails";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/createprofilebio" element={<CreateBio />} />
+        <Route path="/contactdetails" element={<ConatactDetails />} />
       </Routes>
     </Router>
   );
