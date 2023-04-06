@@ -31,7 +31,7 @@ export const photos =[
 
 
 export const profileLinks = [
-    {id:1, link: "/createprofilebio", title: "Bio"},
+    {id:1, link: "/profilesetup", title: "Bio"},
     {id:2, link:"/contactdetails", title: "Contact"},
     {id:3, link:"/experiencedetails", title: "Experience"},
     {id:4, link:"/projectdetails", title: "Projects"},
@@ -42,7 +42,7 @@ export const profileLinks = [
 export const sidebarLinks =[
 
     {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
-    {id:2, link: "/createprofilebio", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
+    {id:2, link: "/profilesetup", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
     {id:3, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={22} />},
     {id:4, link: "/board", title: "Board", icon: <BsClipboard size={22} />},
     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},

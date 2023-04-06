@@ -1,7 +1,7 @@
 import Header from "components/generalHeader/header";
 import SideBar from "components/generalSidebar/sidebar";
 
-const ConatactDetails = () => {
+const ContactDetails = () => {
     return ( 
         <div>
             <Header />
@@ -12,4 +12,4 @@ const ConatactDetails = () => {
      );
 }
  
-export default ConatactDetails;
+export default ContactDetails;

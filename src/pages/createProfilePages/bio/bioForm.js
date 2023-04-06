@@ -1,12 +1,24 @@
 import DisplayPicture from 'assets/images/Dp.jpg';
-import ProfileNavigation from 'components/generalHeader/profileNav/profileNav';
+import ProfileNavigation from 'components/profileNav/profileNav';
 import { useNavigate } from 'react-router';
 
 
 
-const BioForm = () => {
+const BioForm = ({setProfileState}) => {
 
     let navigate = useNavigate();
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+
+        setProfileState((prev)=>{
+            return {
+                ...prev, contact: true,
+                bio: false,     
+            }
+        })
+    }
+
     return ( 
         <div className='bg-[#F9FAFB] w-full py-5 px-11 '>
             <div className='flex flex-col'>
@@ -17,7 +29,7 @@ const BioForm = () => {
             <div className='bg-[#34A751] w-[90%] h-[180px]'>
                 <img src={DisplayPicture}  alt="/" className='absolute rounded-full mx-7 mt-[70px]'/>
             </div>
-            <form className='mt-[60px] w-[90%]'>
+            <form onSubmit={handleSubmit} className='mt-[60px] w-[90%]'>
                 <label htmlFor='title' className='flex flex-col text-[16px]'> Professional Title
                     <input 
                         name='title'
@@ -60,7 +72,7 @@ const BioForm = () => {
                 </label>
 
                 <div className='flex justify-end'>
-                <button onClick={() => {navigate("/contactdetails");}} className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
+                <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
                     Proceed
                 </button>
                 </div>
@@ -68,5 +80,5 @@ const BioForm = () => {
         </div>
      );
 }
- 
+ //onClick={() => {navigate("/contactdetails");}}
 export default BioForm;

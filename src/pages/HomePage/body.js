@@ -1,23 +1,14 @@
 import { useState, useEffect } from "react";
 import { photos } from "utils/data";
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 const Body = () => {
 
+    let navigate = useNavigate();
    
-
-    // useEffect(() => {
-    //     const fetchImages= async() =>{
-    //         const response = await fetch(
-    //             `https://api.unsplash.com/photos/?client_id=8e44b26f31d94d81b2162134bff0c30d`)
-    //         const data = await response.json()
-    //         setPhotos(data)
-    //         console.log(data)
-    //     }
-    //     fetchImages()
-    // },[])
 
     return ( 
         <div className='bg-[#F6FEF9] h-screen'>
@@ -30,7 +21,7 @@ const Body = () => {
                         You can also discover what it takes to do a Job.
                     </p>
                     <div className='flex gap-3 mt-3'>
-                        <button className='bg-[#5925DC] w-[85px] h-[35px] text-white'> Sign Up</button>
+                        <button onClick={() => {navigate("/signup")}} className='bg-[#5925DC] w-[85px] h-[35px] text-white'> Sign Up</button>
                         <button className=' bg-white w-[120px] h-[35px] border text-[#05668D] '>Explore Jobs</button>
                     </div>
                 </div>
