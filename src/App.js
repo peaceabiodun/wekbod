@@ -2,9 +2,11 @@ import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import HomePage from "pages/HomePage";
 import Signup from "pages/loginPage/signup";
 import Login from "pages/loginPage/login";
-import CreateBio from "pages/createProfilePages/bio";
-import ContactDetails from "pages/createProfilePages/contactDetails";
 import ProfileSetup from "components/profileSetup/profileState";
+import ContactDetails from "pages/createProfilePages/contactDetails";
+import ExperienceDetails from "pages/createProfilePages/experience";
+import ProjectDetails from "pages/createProfilePages/projects";
+
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/profilesetup" element={<ProfileSetup />} />
         <Route path="/contactdetails" element={<ContactDetails />} />
+        <Route path="/experiencedetails" element={<ExperienceDetails />} />
+        <Route path="/projectdetails" element={<ProjectDetails />} />
       </Routes>
     </Router>
   );

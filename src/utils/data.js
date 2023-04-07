@@ -47,3 +47,56 @@ export const sidebarLinks =[
     {id:4, link: "/board", title: "Board", icon: <BsClipboard size={22} />},
     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
 ];
+
+
+export const experienceData =[
+    {   id:1, 
+        title: 'Business Development Manager', 
+        company: 'Google Inc.', 
+        type: 'fulltime', 
+        date: 'August, 2019 - Present', 
+        months: '10 mons.', 
+        location: 'Lagos, Nigeria.'
+    },
+    {   id:2, 
+        title: 'Front-end Developer', 
+        company: 'Safari Ng', 
+        type: 'contract', 
+        date: 'June, 2020 - July-2021', 
+        months: '12 mons.', 
+        location: 'Lagos, Nigeria.'
+    },
+    {   id:3, 
+        title: 'Marketing & Communications Manager', 
+        company: 'Meta', 
+        type: 'remote', 
+        date: 'December, 2021 - August, 2022', 
+        months: '9 mons.', 
+        location: 'Boston'
+    },
+];
+
+export const projectData =[
+    {   id: 1, 
+        title: 'Wekbod - Rebrand', 
+        description: 'Get connected to better jobs', 
+        skills: 'JavaScript, React, tailwind css, Redux', 
+        date: 'December, 2021', 
+        link: 'www.wekbod.com', 
+    },
+
+    {   id: 2, 
+        title: 'Lamore', 
+        description: 'Plan all your events using lamore', 
+        skills: 'typescript, next.js, css, Node.js', 
+        date: 'June, 2022', 
+        link: 'www.lamore.com', 
+    },
+    {   id: 3,  
+        title: 'ChillSpot Ng', 
+        description: 'find a place to chill in any city', 
+        skills: 'JavaScript, React, tailwind css', 
+        date: 'February, 2023', 
+        link: 'www.chilspotng.com', 
+    },
+];

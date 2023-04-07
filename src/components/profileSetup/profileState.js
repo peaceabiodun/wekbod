@@ -1,5 +1,6 @@
 import CreateBio from "pages/createProfilePages/bio";
 import ContactDetails from "pages/createProfilePages/contactDetails";
+import ExperienceDetails from "pages/createProfilePages/experience";
 import { useState } from "react";
 
 
@@ -21,9 +22,14 @@ export default function ProfileSetup(){
                     setProfileState= {setProfileState}
                 />
             ):profileState.contact ? (
-                <ContactDetails 
+                <ContactDetails
                     profileState={profileState}
                     setProfileState= {setProfileState}
+                />
+            ):profileState.experience ? (
+                <ExperienceDetails 
+                profileState={profileState}
+                setProfileState= {setProfileState}
                 />
             ): null }
         </>

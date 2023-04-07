@@ -1,17 +1,17 @@
 import Header from "components/generalHeader/header";
 import SideBar from "components/generalSidebar/sidebar";
-import ContactForm from "./contactForm";
+import Experience from "./experience";
 
-const ContactDetails = () => {
-    return ( 
+const ExperienceDetails = () => {
+    return (  
         <div>
             <Header />
-            <div className='flex flex-row'>
+            <div className='flex flex-row' >
                 <SideBar />
-                <ContactForm />
+                <Experience />
             </div>
         </div>
-     );
+    );
 }
  
-export default ContactDetails;
+export default ExperienceDetails;
