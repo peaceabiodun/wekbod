@@ -12,9 +12,9 @@ const Body = () => {
 
     return ( 
         <div className='bg-[#F6FEF9] h-screen'>
-            <div className='grid grid-cols-2 h-[100%]'>
+            <div className='flex sm:grid sm:grid-cols-2 h-[100%] '>
 
-                <div className='flex flex-col justify-center px-[60px]'>
+                <div className='flex flex-col justify-center px-4 sm:px-[60px]'>
                     <h1 className='text-3xl text-black font-semibold'>We are trying to solve <br /> technical unemployment</h1>
                     <p className='text-sm text-[#6C757D]'> We curates jobs from tech companies,<br />
                         to help people who can do the job find it.<br />
@@ -26,14 +26,16 @@ const Body = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col items-center gap-4 py-2 '> 
+
+                <div id="scroll-image" className='hidden sm:flex sm:flex-col items-center gap-4 py-2 overflow-y-auto scroll-smooth relative z-30 '> 
                     {photos.map((item) =>
-                        <div key={item.id}  className='w-[50px] h-[50px] bg-[#D0D5DD4D] rounded-sm flex items-center justify-center' >
+                        <div key={item.id}  className='min-w-[50px] min-h-[50px] bg-[#D0D5DD4D] rounded-sm flex items-center justify-center' >
                            <img  src={item.userImg} alt='/' className='w-[30px] h-[30px] rounded-2xl' />
                         </div>
                     )}
                      
                 </div>
+               
               
             </div>
         </div>

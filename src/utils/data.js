@@ -4,6 +4,7 @@ import Pic3 from 'assets/images/pic3.jpg';
 import Pic4 from 'assets/images/pic4.jpg';
 import Pic5 from 'assets/images/pic5.jpg';
 import Pic6 from 'assets/images/pic6.jpg';
+import Pic7 from 'assets/images/pic7.jpg';
 import {  
     MdOutlineDashboard, 
     MdOutlineAccountCircle, 
@@ -27,6 +28,9 @@ export const photos =[
     {id:6, userImg: Pic6},
     {id:7, userImg: Pic1},
     {id:8, userImg: Pic3},
+    {id:9, userImg: Pic7},
+    {id:10, userImg: Pic2},
+    {id:11, userImg: Pic4},
 ];
 
 

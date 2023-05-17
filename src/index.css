@@ -13,3 +13,11 @@ body {
  
 }
 
+#scroll-image::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll-image {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
