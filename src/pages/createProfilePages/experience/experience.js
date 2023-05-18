@@ -27,7 +27,7 @@ const Experience = ({setProfileState}) => {
 
             <div className='flex justify-end pr-7'>
                 <button className='flex flex-row border border-[#05668D] text-[#05668D] rounded-sm text-sm w-[100px] justify-center items-center h-[35px]'>
-                    <MdAddCircleOutline size={24} />
+                    <MdAddCircleOutline size={24} className='mr-1' />
                     Add New
                 </button>
             </div>

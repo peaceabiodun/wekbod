@@ -20,7 +20,7 @@ const BioForm = ({setProfileState}) => {
     }
 
     return ( 
-        <div className='bg-[#F9FAFB] w-full py-5 px-11 '>
+        <div id='scroll-image' className='bg-[#F9FAFB] w-full h-full py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto '>
             <div className='flex flex-col'>
                 <h2 className='font-bold text-2xl'> Profile</h2>
                 <ProfileNavigation />
@@ -29,6 +29,7 @@ const BioForm = ({setProfileState}) => {
             <div className='bg-[#34A751] w-[90%] h-[180px]'>
                 <img src={DisplayPicture}  alt="/" className='absolute rounded-full mx-7 mt-[70px]'/>
             </div>
+
             <form onSubmit={handleSubmit} className='mt-[60px] w-[90%]'>
                 <label htmlFor='title' className='flex flex-col text-[16px]'> Professional Title
                     <input 
@@ -67,7 +68,7 @@ const BioForm = ({setProfileState}) => {
                         id='bio'
                         type='text'
                         placeholder='Say something about yourself'
-                        className=' h-[120px] outline-none border px-3 py-1 text-sm text-[#6C757D] mt-1'
+                        className='h-[120px] outline-none border px-3 py-1 text-sm text-[#6C757D] mt-1'
                     />
                 </label>
 

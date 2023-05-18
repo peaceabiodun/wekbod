@@ -1,16 +1,17 @@
 import Header from "components/generalHeader/header";
 import BioForm from "./bioForm";
 import SideBar from "components/generalSidebar/sidebar";
+import MobileNavigation from "components/mobileNav/mobileNav";
 
 const CreateBio = () => {
     return ( 
-        <div>
+        <div >
             <Header />
             <div className='flex flex-row'>
                 <SideBar />
                 <BioForm />
             </div>
-           
+           <MobileNavigation />
         </div>
      );
 }

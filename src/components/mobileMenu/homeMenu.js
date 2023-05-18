@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 
 
-const MobileMenu = ({onClose}) => {
+const HomeMenu = ({onClose}) => {
     return ( 
-        <div className='bg-[#F6FEF9] w-full h-full flex flex-col sm:hidden fixed top-0 bottom-0 py-4 px-4'>
+        <div className='bg-[#F6FEF9] w-full h-full flex flex-col sm:hidden fixed top-0 bottom-0 py-4 px-4 z-30'>
             <div className='text-[#05668D]'>
                 <IoClose size={26} onClick={onClose} className='' />
             </div>
@@ -19,4 +19,4 @@ const MobileMenu = ({onClose}) => {
      );
 }
  
-export default MobileMenu;
+export default HomeMenu;

@@ -16,7 +16,7 @@ const Body = () => {
 
                 <div className='flex flex-col justify-center px-4 sm:px-[60px]'>
                     <h1 className='text-3xl text-black font-semibold'>We are trying to solve <br /> technical unemployment</h1>
-                    <p className='text-sm text-[#6C757D]'> We curates jobs from tech companies,<br />
+                    <p className='text-sm text-[#6C757D] mt-3'> We curates jobs from tech companies,<br />
                         to help people who can do the job find it.<br />
                         You can also discover what it takes to do a Job.
                     </p>

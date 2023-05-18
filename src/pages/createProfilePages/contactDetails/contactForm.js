@@ -17,15 +17,15 @@ const ContactForm = ({setProfileState}) => {
         })
     }
     return ( 
-        <div className='bg-[#F9FAFB] w-full h-screen py-5 px-11'>
+        <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
             <div className='flex flex-col'>
                 <h2 className='font-bold text-2xl'> Profile</h2>
                 <ProfileNavigation/>
             </div>
 
-            <form onSubmit={handleSubmit} className='mt-[60px] w-[90%]'>
-                <div className='flex flex-row w-[100%] gap-4'>
-                <label htmlFor="email" className='flex flex-col text-[16px]  mt-2 w-[50%]' > Email Address
+            <form onSubmit={handleSubmit} className='mt-6 w-[90%]'>
+                <div className='flex flex-col sm:flex-row w-[100%] gap-4'>
+                <label htmlFor="email" className='flex flex-col text-[16px]  mt-2 sm:w-[50%]' > Email Address
                     <input  
                         type="email"
                         id="email"
@@ -34,7 +34,7 @@ const ContactForm = ({setProfileState}) => {
                     />
                 </label>
 
-                <label htmlFor="website" className='flex flex-col text-[16px]  mt-2 w-[50%]' > Website (If applicable)
+                <label htmlFor="website" className='flex flex-col text-[16px]  mt-2 sm:w-[50%]' > Website (If applicable)
                     <input  
                         type="text"
                         id="website"
@@ -44,8 +44,8 @@ const ContactForm = ({setProfileState}) => {
                 </label>
                 </div>
 
-                <div className='flex flex-row w-[100%] gap-4 mt-4'>
-                <label htmlFor="phone-number" className='flex flex-col text-[16px]  mt-2 w-[50%]' > Phone number
+                <div className='flex flex-col sm:flex-row w-[100%] gap-4 mt-4'>
+                <label htmlFor="phone-number" className='flex flex-col text-[16px]  mt-2 sm:w-[50%]' > Phone number
                     <input  
                         type="number"
                         id="phone-number"
@@ -54,7 +54,7 @@ const ContactForm = ({setProfileState}) => {
                     />
                 </label>
 
-                <label htmlFor="alt-phonenumber" className='flex flex-col text-[16px]  mt-2 w-[50%]' > Alternative Phone number
+                <label htmlFor="alt-phonenumber" className='flex flex-col text-[16px]  mt-2 sm:w-[50%]' > Alternative Phone number
                     <input  
                         type="number"
                         id="alt-phonenumber"
@@ -83,7 +83,7 @@ const ContactForm = ({setProfileState}) => {
                     />
                 </label>
 
-                <div className='flex justify-end mt-6'>
+                <div className='flex justify-end my-6'>
                 <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
                     Proceed
                 </button>

@@ -13,7 +13,7 @@ const Projects = () => {
                 <ProfileNavigation />
             </div>
             
-            <div className='flex justify-end pr-7'>
+            <div className='flex justify-end pr-7 my-3'>
                 <button className='flex flex-row border border-[#05668D] text-[#05668D] rounded-sm text-sm w-[100px] justify-center items-center h-[35px]'>
                     <MdAddCircleOutline size={24} />
                     Add New

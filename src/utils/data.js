@@ -40,15 +40,15 @@ export const profileLinks = [
     {id:3, link:"/experiencedetails", title: "Experience"},
     {id:4, link:"/projectdetails", title: "Projects"},
     {id:5, link:"/educationdetails", title: "Education"},
-    {id:6, link:"/preview-cv", title: "Preview - CV"},
+    {id:6, link:"/preview-cv", title: "Preview-CV"},
 ];
 
 export const sidebarLinks =[
 
     {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
     {id:2, link: "/profilesetup", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
-    {id:3, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={22} />},
-    {id:4, link: "/board", title: "Board", icon: <BsClipboard size={22} />},
+    {id:3, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={24} />},
+    {id:4, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
 ];
 

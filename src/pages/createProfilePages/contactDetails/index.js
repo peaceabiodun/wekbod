@@ -1,6 +1,7 @@
 import Header from "components/generalHeader/header";
 import SideBar from "components/generalSidebar/sidebar";
 import ContactForm from "./contactForm";
+import MobileNavigation from "components/mobileNav/mobileNav";
 
 const ContactDetails = () => {
     return ( 
@@ -10,6 +11,7 @@ const ContactDetails = () => {
                 <SideBar />
                 <ContactForm />
             </div>
+            <MobileNavigation />
         </div>
      );
 }
