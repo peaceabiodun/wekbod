@@ -6,6 +6,8 @@ import ProfileSetup from "components/profileSetup/profileState";
 import ContactDetails from "pages/createProfilePages/contactDetails";
 import ExperienceDetails from "pages/createProfilePages/experience";
 import ProjectDetails from "pages/createProfilePages/projects";
+import EducationDetails from "pages/createProfilePages/education";
+import PreviewCv from "pages/createProfilePages/previewCv";
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/contactdetails" element={<ContactDetails />} />
         <Route path="/experiencedetails" element={<ExperienceDetails />} />
         <Route path="/projectdetails" element={<ProjectDetails />} />
+        <Route path="/educationdetails" element={<EducationDetails />} />
+        <Route path="/preview-cv" element={<PreviewCv />} />
       </Routes>
     </Router>
   );

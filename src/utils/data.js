@@ -40,7 +40,7 @@ export const profileLinks = [
     {id:3, link:"/experiencedetails", title: "Experience"},
     {id:4, link:"/projectdetails", title: "Projects"},
     {id:5, link:"/educationdetails", title: "Education"},
-    {id:6, link:"/preview-cv", title: "Preview-CV"},
+    {id:6, link:"/preview-cv", title: "PreviewCV"},
 ];
 
 export const sidebarLinks =[

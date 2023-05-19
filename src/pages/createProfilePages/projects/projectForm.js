@@ -3,6 +3,9 @@ import ProfileNavigation from "components/profileNav/profileNav";
 
 
 const ProjectForm = () => {
+
+
+
     return ( 
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
             <div className='flex flex-col'>
@@ -48,6 +51,26 @@ const ProjectForm = () => {
                             className='h-[40px] outline-none border px-3 text-sm text-[#6C757D] mt-1'
                         />
                     </label> 
+                </div>
+
+                <div className='mt-4'>
+                    <label htmlFor='summary' className='flex flex-col text-[16px] mt-2 '> Summary
+                        <textarea 
+                            name='summary'
+                            id='summary'
+                            type='text'
+                            placeholder='Give a description of work done'
+                            className='h-[120px] outline-none border px-3 py-1 text-sm text-[#6C757D] mt-1'
+                        />
+                    </label>
+                </div>
+
+                <div className='flex justify-end my-6'>
+                    <button 
+                        type='submit'  
+                        className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
+                        Save
+                    </button>
                 </div>
             </form>
 
