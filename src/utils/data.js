@@ -104,3 +104,36 @@ export const projectData =[
         link: 'www.chilspotng.com', 
     },
 ];
+
+
+export const educationData = [
+    {
+        id: 1,
+        course: "Banking & Finance",
+        school: "Covenant University",
+        degree: "Bsc",
+        startDate: "August 2016",
+        endDate: "september 2020",
+        duration: "4 years",
+        location: "Lagos Nigeria"
+
+    },
+    {
+        id: 2,
+        course: "Masters in Business Adminisistration",
+        school: "University of Lagos",
+        degree: "Msc",
+        startDate: "January 2022",
+        endDate: "May 2023",
+        duration: "17 months",
+        location: "Lagos Nigeria"
+
+    },
+]
+
+export const skills= [
+    {id: 1, skill: 'JavaScript'},
+    {id: 2, skill: 'ReactJs'},
+    {id: 3, skill: 'NodeJs'},
+    {id: 4, skill: 'GraphQl'},
+]
