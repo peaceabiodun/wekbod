@@ -74,7 +74,7 @@ export const experienceData =[
         title: 'Marketing & Communications Manager', 
         company: 'Meta', 
         type: 'remote', 
-        date: 'December, 2021 - August, 2022', 
+        date: 'December, 2021-August, 2022', 
         months: '9 mons.', 
         location: 'Boston'
     },
@@ -82,7 +82,7 @@ export const experienceData =[
 
 export const projectData =[
     {   id: 1, 
-        title: 'Wekbod - Rebrand', 
+        title: 'Wekbod-Rebrand', 
         description: 'Get connected to better jobs', 
         skills: 'JavaScript, React, tailwind css, Redux', 
         date: 'December, 2021', 
