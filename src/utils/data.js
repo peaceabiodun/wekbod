@@ -10,7 +10,7 @@ import {
     MdOutlineAccountCircle, 
     MdNotificationsNone} 
 from "react-icons/md";
-import { BsClipboard } from "react-icons/bs";
+import { BsClipboard, BsBriefcase} from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
 
 
@@ -51,6 +51,21 @@ export const sidebarLinks =[
     {id:4, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
 ];
+
+export const userSidebarLinks =[
+
+    {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
+    {id:2, link: "/profile", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
+    {id:3, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
+    {id:4, link: "/applications", title: "Applications", icon: <BsBriefcase size={22} />},
+];
+
+export const settingsLink =[
+    {id:1, link: "/account-settings", title: "Account"},
+    {id:2, link: "/notifications", title: "Notifications"},
+    {id:3, link: "/teams", title: "Teams"},
+]
+
 
 
 export const experienceData =[
@@ -136,4 +151,10 @@ export const skills= [
     {id: 2, skill: 'ReactJs'},
     {id: 3, skill: 'NodeJs'},
     {id: 4, skill: 'GraphQl'},
+];
+
+export const menuTab = [
+    {id:1, heading: "Projects"},
+    {id:2, heading: "Experiences"},
+    {id:3, heading: "Awards"},
 ]

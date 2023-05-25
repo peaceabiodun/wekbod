@@ -85,8 +85,8 @@ const A4Preview = () => {
 
                 <div className='py-6 flex flex-col sm:grid sm:grid-cols-2 justify-between gap-4 w-[100%] '>
 
-                        <div>
-                            <h2 className='text-l sm:text-xl  font-semibold'>Education</h2>
+                    <div>
+                        <h2 className='text-l sm:text-xl  font-semibold'>Education</h2>
 
                             {educationData.map((item) =>(
                                 <div key={item.id} className='flex flex-row mt-6  '>
@@ -106,10 +106,10 @@ const A4Preview = () => {
 
                                 </div>
                             ))}
-                        </div>
+                    </div>
 
-                        <div className=' md:w-50% ml-4 '>
-                            <h2 className='text-lg sm:text-xl  font-semibold'>Skills</h2>
+                    <div className=' md:w-50% ml-4 '>
+                        <h2 className='text-lg sm:text-xl  font-semibold'>Skills</h2>
 
                             <div className='my-6 ml-6'>
                                 {skills.map((item)=>(
@@ -118,10 +118,17 @@ const A4Preview = () => {
                                 </ul>
                                 ))}
                             </div>
-                        </div>
+                    </div>
 
                         
-                    </div>
+                </div>
+                <div className='flex justify-end my-6'>
+                    <button 
+                        onClick={()=>{navigate("/profile")}}
+                        className='bg-[#05668D] text-white w-[200px] h-[35px] border '>
+                       View Profile
+                    </button>
+                </div>
             </div>
             
         </div>

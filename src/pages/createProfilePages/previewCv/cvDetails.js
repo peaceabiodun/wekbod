@@ -9,7 +9,7 @@ const CvDetails = () => {
     return ( 
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
             <div className='flex flex-col'>
-                <h2 className='font-bold text-2xl'> Profile</h2>
+                <h2 className='font-bold text-2xl'> Profile Setup</h2>
                 <ProfileNavigation />
             </div>
 
