@@ -11,13 +11,14 @@ const ProfileBody = () => {
     const [tabs, setTabs] = useState(menuTab[0].heading);
 
     return ( 
-        <div className=' h-screen'>
-            <div className=' h-[35%] bg-[#F0F3BD]'></div>
+        <div className='h-[100%]'>
+            <div className=''>
+            <div className='w-full h-[200px] bg-[#F0F3BD]'></div>
 
             <div className='flex flex-col sm:grid sm:grid-cols-2 h-full'>
 
                 <div className='px-6'>
-                    <div className='mt-[-75px]'>
+                    <div className='mt-[-70px]'>
                         <img src={DisplayPicture} alt='DP' className=' rounded-full' />
                     </div>
                     
@@ -34,50 +35,56 @@ const ProfileBody = () => {
                         </p>
                     </div>
 
-                    <div className='flex justify-between my-6 text-lg'>
-                        <h2 className='text-[#6C757D] font-medium'>SKILLS</h2>
+                    <div className='flex flex-col md:flex-row md:justify-between my-6 text-lg'>
+
+                        <h2 className='text-[#6C757D] font-medium mr-2'>SKILLS</h2>
                         <div className='flex gap-3 '>
                             {skills.map((item) =>(
-                                <div key={item.id} className='bg-[#F0F3BDBF] rounded-md p-1 text-sm font-medium'>{item.skill}</div>
+                                <div key={item.id} className='bg-[#F0F3BDBF] rounded-md p-1 text-xs md:text-sm font-medium'>{item.skill}</div>
                             ))}
                         </div>
                     </div>
 
                 </div>
 
-                <div className='bg-[#bdc0c2]'>
+                <div className='bg-[#bdc0c2] p-4'>
+                    <div className='flex flex-row gap-4 text-[#6C757D] text-sm font-semibold'>
                     {menuTab.map((item)=>(
                         <h2 
                             key={item.id}
                             onClick={() =>{setTabs(item.heading)}}
-                            className=''
+                            className={`hover:bg-white p-1 rounded-md hover:text-[#212529] cursor-pointer ${item.heading === tabs ? 'bg-white p-1 rounded-md text-[#212529] cursor-pointer': ''}`}
                         >
                         {item.heading}
                         </h2>
                     ))}
-                    
+                    </div>
+
+                    {tabs === menuTab[0].heading &&
+                        <div className='my-8 '>
+                            <ProjectTab />
+                        </div>
+                    }
+
+                    {tabs === menuTab[1].heading &&
+                        <div className='my-8 '>
+                            <ExperienceTab />
+                        </div>
+                    }
+
+                    {tabs === menuTab[1].heading &&
+                        <div className='my-8 '>
+                            <AwardTab />
+                        </div>
+                    }
                 </div>
 
-                {tabs === menuTab[0].heading &&
-                    <>
-                        <ProjectTab />
-                    </>
-                }
+                
 
-                {tabs === menuTab[1].heading &&
-                    <>
-                        <ExperienceTab />
-                    </>
-                }
-
-                {tabs === menuTab[1].heading &&
-                    <>
-                        <AwardTab />
-                    </>
-                }
+            
 
             </div>
-
+            </div>
         </div>
      );
 }
