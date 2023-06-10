@@ -157,4 +157,5 @@ export const menuTab = [
     {id:1, heading: "Projects"},
     {id:2, heading: "Experiences"},
     {id:3, heading: "Awards"},
+    {id:4, heading: "Skills"},
 ]

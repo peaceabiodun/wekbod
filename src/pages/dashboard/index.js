@@ -1,20 +1,20 @@
 import UserSidebar from "components/generalSidebar/userSidebar";
-import ProfileBody from "./profileBoby";
+import DashboardBody from "./dashboardBody";
 import MobileNavigation from "components/mobileNav/mobileNav";
 import Header from "components/generalHeader/header";
 
 
-const UserProfile = () => {
+const Dashboard = () => {
     return ( 
-        <div className=''>
+        <div className='w-full'>
             <Header />
-            <div className='flex flex-row  '>
+            <div className='flex flex-row '>
                 <UserSidebar />
-                <ProfileBody /> 
+                <DashboardBody />
             </div>
             <MobileNavigation />
         </div>
      );
 }
- 
-export default UserProfile;
+
+export default Dashboard;

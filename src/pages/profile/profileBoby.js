@@ -4,6 +4,7 @@ import { menuTab, skills } from 'utils/data';
 import ProjectTab from './tabs/projectTab';
 import ExperienceTab from './tabs/experienceTab';
 import AwardTab from './tabs/awardsTab';
+import SkillTab from './tabs/skillTab';
 
 
 const ProfileBody = () => {
@@ -11,11 +12,11 @@ const ProfileBody = () => {
     const [tabs, setTabs] = useState(menuTab[0].heading);
 
     return ( 
-        <div className='h-[100%]'>
-            <div className=''>
+        <div className='w-full h-full'>
+           
             <div className='w-full h-[200px] bg-[#F0F3BD]'></div>
 
-            <div className='flex flex-col sm:grid sm:grid-cols-2 h-full'>
+            <div className='flex flex-col'>
 
                 <div className='px-6'>
                     <div className='mt-[-70px]'>
@@ -23,11 +24,16 @@ const ProfileBody = () => {
                     </div>
                     
                     <div className='flex justify-between py-4'>
-                        <h1 className='text-2xl font-bold'>Dubem Izuorah</h1>
-                        <button className='border text-[#6C757D] w-[80px] h-[30px] text-sm font-medium shadow-sm'>Edit</button>
+                        <div>
+                            <h1 className='text-2xl font-bold'>Dubem Izuorah</h1>
+                            <p className='text-[#6C757D] text-sm font-semibold'>Software Engineer</p>
+                            <p className='text-sm '>Nigeria</p>
+                        </div>
+                        
+                        <button className='border text-[#6C757D] w-[80px] h-[30px] text-sm font-medium shadow-sm'>Edit Profile</button>
                     </div>
 
-                    <div>
+                    <div className='max-w-[600px]'>
                         <h2 className='text-[#6C757D] text-lg font-semibold'>ABOUT ME</h2>
                         <p className='text-sm my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis vestibulum turpis,
                             ut commodo neque gravida id. Suspendisse ultrices ex sit amet pellentesque blandit. 
@@ -35,25 +41,16 @@ const ProfileBody = () => {
                         </p>
                     </div>
 
-                    <div className='flex flex-col md:flex-row md:justify-between my-6 text-lg'>
-
-                        <h2 className='text-[#6C757D] font-medium mr-2'>SKILLS</h2>
-                        <div className='flex gap-3 '>
-                            {skills.map((item) =>(
-                                <div key={item.id} className='bg-[#F0F3BDBF] rounded-md p-1 text-xs md:text-sm font-medium'>{item.skill}</div>
-                            ))}
-                        </div>
-                    </div>
 
                 </div>
 
-                <div className='bg-[#bdc0c2] p-4'>
+                <div className='p-4'>
                     <div className='flex flex-row gap-4 text-[#6C757D] text-sm font-semibold'>
                     {menuTab.map((item)=>(
                         <h2 
                             key={item.id}
                             onClick={() =>{setTabs(item.heading)}}
-                            className={`hover:bg-white p-1 rounded-md hover:text-[#212529] cursor-pointer ${item.heading === tabs ? 'bg-white p-1 rounded-md text-[#212529] cursor-pointer': ''}`}
+                            className={`hover:bg-[#969899]  p-1 rounded-md hover:text-white cursor-pointer ${item.heading === tabs ? 'bg-white p-1 rounded-md text-[#212529] cursor-pointer': ''}`}
                         >
                         {item.heading}
                         </h2>
@@ -61,7 +58,7 @@ const ProfileBody = () => {
                     </div>
 
                     {tabs === menuTab[0].heading &&
-                        <div className='my-8 '>
+                        <div className='my-8  '>
                             <ProjectTab />
                         </div>
                     }
@@ -72,9 +69,15 @@ const ProfileBody = () => {
                         </div>
                     }
 
-                    {tabs === menuTab[1].heading &&
+                    {tabs === menuTab[2].heading &&
                         <div className='my-8 '>
                             <AwardTab />
+                        </div>
+                    }
+                    
+                    {tabs === menuTab[3].heading &&
+                        <div className='my-8 '>
+                            <SkillTab />
                         </div>
                     }
                 </div>
@@ -83,7 +86,6 @@ const ProfileBody = () => {
 
             
 
-            </div>
             </div>
         </div>
      );
