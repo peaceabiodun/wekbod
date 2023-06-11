@@ -6,7 +6,7 @@ import Header from "components/generalHeader/header";
 
 const UserProfile = () => {
     return ( 
-        <div className=''>
+        <div className='w-full'>
             <Header />
             <div className='flex flex-row  '>
                 <UserSidebar />

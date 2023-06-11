@@ -6,9 +6,9 @@ import Header from "components/generalHeader/header";
 
 const Dashboard = () => {
     return ( 
-        <div className='w-full'>
+        <div className='w-full '>
             <Header />
-            <div className='flex flex-row '>
+            <div className='flex flex-row'>
                 <UserSidebar />
                 <DashboardBody />
             </div>

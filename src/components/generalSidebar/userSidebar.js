@@ -13,7 +13,7 @@ const UserSidebar = () => {
     const [openSettings, setOpenSettings] = useState(false);
 
     return (
-        <div className='bg-[#FFFFFF] w-[28%] lg:w-[20%] h-full hidden md:flex flex-col py-6 px-6 shadow-xl text-sm '>
+        <div className='bg-[#FFFFFF] w-[28%] lg:w-[20%] hidden md:flex flex-col py-6 px-6 shadow-xl text-sm '>
 
             <div className='mt-[40px]'>
                 <button className=' text-sm text-[#6C757D] border w-[100px] h-[30px]  rounded-2xl'>
