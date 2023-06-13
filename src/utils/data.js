@@ -43,21 +43,22 @@ export const profileLinks = [
     {id:6, link:"/preview-cv", title: "PreviewCV"},
 ];
 
-export const sidebarLinks =[
+// export const sidebarLinks =[
 
-    {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
-    {id:2, link: "/profilesetup", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
-    {id:3, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={24} />},
-    {id:4, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
-    {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
-];
+//     {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
+//     {id:2, link: "/profilesetup", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
+//     {id:3, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={24} />},
+//     {id:4, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
+//     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
+// ];
 
 export const userSidebarLinks =[
 
     {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
     {id:2, link: "/profile", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
     {id:3, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
-    {id:4, link: "/applications", title: "Applications", icon: <BsBriefcase size={22} />},
+    {id:4, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={23} />},
+    {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
 ];
 
 export const settingsLink =[
@@ -165,3 +166,9 @@ export const statsTab = [
     {id:2, title: "Completed", stat: 50, thread: "+8"},
     {id:3, title: "Pending", stat: 20, thread: "+5"},
 ];
+
+export const jobsData= [
+    {id:1, title: "Frontend web developer", company: "google", type: "full-time", location:"Remote", date: "5 days ago"},
+    {id:2, title: "backend engr", company: "Amazon", type: "Contract", location:"Ireland", date: "3 days ago"},
+    {id:3, title: "React Developer", company: "Huawei", type: "Contract", location:"China", date: "a day ago"}
+]
