@@ -7,11 +7,7 @@ const PreviewCv = () => {
     return ( 
         <div>
             <Header />
-            <div className='flex flex-row'>
-                <SideBar />
-                <CvDetails />
-            </div>
-            <MobileNavigation />
+            <CvDetails />
         </div>
      );
 }

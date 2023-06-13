@@ -1,10 +1,12 @@
 import ProfileNavigation from "components/profileNav/profileNav";
 import { CiLinkedin } from "react-icons/ci";
 import { MdAddCircleOutline } from "react-icons/md";
-
+import { useNavigate } from 'react-router';
+import { FaBackward } from "react-icons/fa";
 
 
 const ContactForm = ({setProfileState}) => {
+    let navigate = useNavigate();
 
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -18,8 +20,16 @@ const ContactForm = ({setProfileState}) => {
     }
     return ( 
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
+            
+            <div className='text-[#05668D] my-2'>
+                <button onClick={() => {navigate("/profilesetup");}} className='flex justify-center items-center w-[80px] h-[35px] border border-[#05668D] '>
+                    <FaBackward size={12} className='mr-1'/>
+                    Back 
+                </button>
+            </div>
+
             <div className='flex flex-col'>
-                <h2 className='font-bold text-2xl'> Profile Setup</h2>
+                <h2 className='font-bold text-2xl text-center'> Setup your Profile</h2>
                 <ProfileNavigation/>
             </div>
 
@@ -70,7 +80,7 @@ const ContactForm = ({setProfileState}) => {
                         type="text"
                         id="linkedin"
                         placeholder="Paste LinkedIn url"
-                        className=' h-[35px] outline-none border px-3 text-sm text-[#6C757D] mt-1 w-[50%]'
+                        className=' h-[35px] outline-none border px-3 text-sm text-[#6C757D] mt-1 w-[100%] sm:w-[50%]'
                     />
                 </label>
 
@@ -79,7 +89,7 @@ const ContactForm = ({setProfileState}) => {
                         type="text"
                         id="url"
                         placeholder="Paste url"
-                        className=' h-[35px] outline-none border px-3 text-sm text-[#6C757D] mt-1 w-[50%]'
+                        className=' h-[35px] outline-none border px-3 text-sm text-[#6C757D] mt-1 w-[100%] sm:w-[50%]'
                     />
                 </label>
 

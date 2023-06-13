@@ -7,11 +7,7 @@ const ContactDetails = () => {
     return ( 
         <div>
             <Header />
-            <div className='flex flex-row'>
-                <SideBar />
-                <ContactForm />
-            </div>
-            <MobileNavigation />
+            <ContactForm />
         </div>
      );
 }

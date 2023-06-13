@@ -7,11 +7,7 @@ const CreateBio = () => {
     return ( 
         <div >
             <Header />
-            <div className='flex flex-row'>
-                <SideBar />
-                <BioForm />
-            </div>
-           <MobileNavigation />
+            <BioForm />
         </div>
      );
 }

@@ -1,6 +1,6 @@
 import DisplayPicture from 'assets/images/Dp.jpg';
 import { useState } from 'react';
-import { menuTab, skills } from 'utils/data';
+import { menuTab } from 'utils/data';
 import ProjectTab from './tabs/projectTab';
 import ExperienceTab from './tabs/experienceTab';
 import AwardTab from './tabs/awardsTab';

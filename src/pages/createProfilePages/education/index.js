@@ -9,11 +9,7 @@ const EducationDetails = () => {
     return ( 
         <div>
             <Header />
-            <div className='flex flex-row'>
-                <SideBar />
-                <EducationForm />
-            </div>
-            <MobileNavigation />
+            <EducationForm />
         </div>
      );
 }

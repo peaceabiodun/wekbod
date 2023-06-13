@@ -158,4 +158,10 @@ export const menuTab = [
     {id:2, heading: "Experiences"},
     {id:3, heading: "Awards"},
     {id:4, heading: "Skills"},
-]
+];
+
+export const statsTab = [
+    {id:1, title: "Saved Jobs", stat: 150, thread: "+18"},
+    {id:2, title: "Completed", stat: 50, thread: "+8"},
+    {id:3, title: "Pending", stat: 20, thread: "+5"},
+];

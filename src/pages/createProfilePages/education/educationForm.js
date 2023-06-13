@@ -1,13 +1,28 @@
 import ProfileNavigation from "components/profileNav/profileNav";
+import { useNavigate } from 'react-router';
+import { FaBackward } from "react-icons/fa";
+
+
 
 
 
 
 const EducationForm = () => {
+
+    let navigate = useNavigate();
+
     return ( 
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
+            
+            <div className='text-[#05668D] my-2'>
+                <button onClick={() => {navigate("/projectdetails");}} className='flex justify-center items-center w-[80px] h-[35px] border border-[#05668D] '>
+                    <FaBackward size={12} className='mr-1'/>
+                    Back 
+                </button>
+            </div>
+
             <div className='flex flex-col'>
-                <h2 className='font-bold text-2xl'> Profile Setup</h2>
+                <h2 className='font-bold text-2xl text-center'>Setup your Profile</h2>
                 <ProfileNavigation />
             </div>
 
@@ -85,11 +100,17 @@ const EducationForm = () => {
                     </label>
                 </div>
                 
-                <div className='flex justify-end my-6'>
+                <div className='flex justify-end my-6 gap-2'>
+
                     <button 
                         type='submit'  
                         className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
                         Save
+                    </button>
+
+                    <button  
+                        className='bg-[white] text-[#05668D] w-[100px] h-[35px] border border-[#05668D]'>
+                        Skip
                     </button>
                 </div>
 

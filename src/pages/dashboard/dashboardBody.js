@@ -1,12 +1,22 @@
+import { useState } from "react";
 import { BsPeopleFill, BsStar } from "react-icons/bs";
 import { MdOutlinePending } from "react-icons/md";
 import { HiArrowUpRight, HiOutlineArrowDownRight} from "react-icons/hi2";
-import JobFrame from 'assets/images/jobFrame.png';
+import { statsTab } from "utils/data";
+import SavedJobsTab from "./tabs/savedJobsTab";
+import CompletedTab from "./tabs/completedTab";
+import PendingTab from "./tabs/pendingTab";
+
+
+
 
 
 const DashboardBody = () => {
+
+    const [tabs, setTabs] = useState(statsTab[0].title);
+
     return ( 
-        <div className=' bg-[#ECFDF3] py-6 px-6 w-full' >
+        <div className=' bg-[#ECFDF3] py-6 px-6 w-full h-[100vh]' >
 
             <div className=''>
                 <h2 className='text-2xl font-semibold mt-[40px]'>Welcome back, Dubem.</h2>
@@ -23,75 +33,55 @@ const DashboardBody = () => {
                 </div>
 
                 <div id="scroll-image" className='flex flex-row justify-between my-4 gap-3 overflow-x-auto w-full'>
-                    <div className="bg-[#ECFDF3] py-2 px-4  rounded-md border w-full">
-                        <div className='flex'>
-                            <div>
+                    {statsTab.map((item) =>(
+                    <div key={item.id}
+                        onClick={() =>{setTabs(item.title)}}
+                        className="bg-[#ECFDF3] py-2 px-4  rounded-md border w-full cursor-pointer">
+                            
+                        <div className={`flex whitespace-nowrap ${item.title === tabs ? 'text-black': 'text-[#6C757D]'}`}>
+                            {item.id === 1 &&<div>
                                 <BsPeopleFill size={20} />
-                            </div>
-                            <p className='text-sm font-medium ml-3'>SavedJobs</p>
+                            </div>}
+
+                            {item.id ===2 && <div>
+                                <BsStar size={20} />
+                            </div>}
+
+                            {item.id ===3 && <div>
+                                <MdOutlinePending size={20} />
+                            </div>}
+
+                            <p className='text-sm font-medium ml-3 '>{item.title}</p>
                         </div>
-                        <p className='text-2xl font-semibold my-2 '>150</p>
+                        
+                        <p className={`text-2xl font-semibold my-2 ${item.title === tabs ? 'text-black': 'text-[#6C757D]' }`}>{item.stat}</p>
                         <div className='flex'>
-                            <HiArrowUpRight size={12} className='text-green-600 mr-1 mt-1' />
-                            <p className='text-[#6C757D] text-xs'>+18 this week</p>
+                            {item.id === 3 ? 
+                                <HiOutlineArrowDownRight size={12} className='text-red-600 mr-1 mt-1' />
+                                : 
+                                <HiArrowUpRight size={12} className='text-green-600 mr-1 mt-1' />}
+                            <p className='text-[#6C757D] text-xs'>{item.thread} this week</p>
                         </div>
                         
                     </div>
-
-                    <div className="bg-[#ECFDF3] py-2 px-4 rounded-md border w-full">
-                        <div className='flex'>
-                            <div>
-                                <BsStar size={20} />
-                            </div>
-                            <p className='text-sm font-medium ml-3'>Completed</p>
-                        </div>
-                        <p className='text-2xl font-semibold my-2'>50</p>
-                        <div className='flex'>
-                            <HiArrowUpRight size={12} className='text-green-600 mr-1 mt-1' />
-                            <p className='text-[#6C757D] text-xs'>+18 this week</p>
-                        </div>
-                    </div>
-
-                    <div className="bg-[#ECFDF3] py-2 px-4  rounded-md border w-full">
-                        <div className='flex'>
-                            <div>
-                                <MdOutlinePending size={20}/>
-                            </div> 
-                            <p className='text-sm font-medium ml-3'>pending</p>
-                        </div>
-                        <p className='text-2xl font-semibold my-2'>20</p>
-                        <div className='flex'>
-                            <HiOutlineArrowDownRight size={12} className='text-red-600 mr-1 mt-1' />
-                            <p className='text-[#6C757D] text-xs'>+18 this week</p>
-                        </div>
-                    </div>
-
+                    ))}
+                
                 </div>
             </div>
 
             <div className='bg-white rounded-sm w-full p-5 border'>
-                <div>
-                    <h2 className='text-xl font-semibold'>Saved Jobs</h2>
-                </div>
 
-                <div className='w-full my-5'>
+                {tabs === statsTab[0].title &&      
+                    <SavedJobsTab />
+                }
 
-                    <div className='flex flex-col border rounded-md p-2'>
-                        <div className='flex flex-row' >
-                            <img src={JobFrame} alt="/" className='w-[60px]' />
-                            <div className='flex flex-col justify-center' >
-                                <p className='text-xs sm:text-sm font-semibold'>Frontend web developer</p>
-                                <div className='flex gap-2 text-[10px] sm:text-xs'>
-                                    <p>Delliote</p>
-                                    <p>Full-time</p>
-                                    <p>Remote</p>
-                                </div>
-                            </div>
-                        </div>
+                {tabs === statsTab[1].title &&      
+                    <CompletedTab />
+                }
 
-                        <p className='text-[#6C757D] text-xs'>5 days ago</p>
-                    </div>
-                </div>
+                {tabs === statsTab[2].title &&      
+                    <PendingTab />
+                }
             </div>
 
         </div>

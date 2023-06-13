@@ -8,11 +8,7 @@ const ExperienceDetails = () => {
     return (  
         <div>
             <Header />
-            <div className='flex flex-row' >
-                <SideBar />
-               <ExperienceForm />
-            </div>
-            <MobileNavigation />
+            <ExperienceForm />
         </div>
     );
 }

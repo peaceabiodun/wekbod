@@ -1,6 +1,8 @@
 import DisplayPicture from 'assets/images/Dp.jpg';
 import ProfileNavigation from 'components/profileNav/profileNav';
 import { useNavigate } from 'react-router';
+import { FaBackward } from "react-icons/fa";
+
 
 
 
@@ -21,8 +23,14 @@ const BioForm = ({setProfileState}) => {
 
     return ( 
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-full py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto '>
+            <div className='text-[#05668D] my-2'>
+                <button onClick={() => {navigate("/login");}} className='flex justify-center items-center w-[80px] h-[35px] border border-[#05668D] '>
+                    <FaBackward size={12} className='mr-1'/>
+                    Back 
+                </button>
+            </div>
             <div className='flex flex-col'>
-                <h2 className='font-bold text-2xl'> Profile Setup</h2>
+                <h2 className='font-bold text-2xl text-center'> Setup your Profile</h2>
                 <ProfileNavigation />
             </div>
 
@@ -37,12 +45,12 @@ const BioForm = ({setProfileState}) => {
                         id='title'
                         type='text'
                         placeholder='Enter Professional Title'
-                        className=' w-[50%] h-[40px] outline-none border px-3 text-sm text-[#6C757D] mt-1'
+                        className=' h-[40px] outline-none border px-3 text-sm text-[#6C757D] mt-1'
                     />
                 </label>
 
-                <div className='flex flex-row w-[100%] gap-4 '>
-                    <label htmlFor='firstname' className='flex flex-col text-[16px] mt-2 w-[50%]'> First Name
+                <div className='flex flex-col sm:flex-row w-[100%] gap-4 '>
+                    <label htmlFor='firstname' className='flex flex-col text-[16px] mt-2 sm:w-[50%]'> First Name
                         <input 
                             name='firstname'
                             id='firstname'
@@ -52,7 +60,7 @@ const BioForm = ({setProfileState}) => {
                         />
                     </label>
 
-                    <label htmlFor='lastname' className='flex flex-col text-[16px] mt-2  w-[50%]'> Last Name
+                    <label htmlFor='lastname' className='flex flex-col text-[16px] mt-2  sm:w-[50%]'> Last Name
                         <input 
                             name='lastname'
                             id='lastname'
@@ -72,10 +80,10 @@ const BioForm = ({setProfileState}) => {
                     />
                 </label>
 
-                <div className='flex justify-end'>
-                <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
-                    Proceed
-                </button>
+                <div className='flex justify-end mb-4'>
+                    <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
+                        Proceed
+                    </button>
                 </div>
             </form>
         </div>
