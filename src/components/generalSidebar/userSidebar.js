@@ -20,11 +20,12 @@ const UserSidebar = () => {
                     Quick actions
                 </button>
 
-                <div className='flex my-4'>
-                    <BsSearch size={16} className='text-[#6C757D] mt-1 mr-2' />
+                <div className='flex my-4 h-[30px] items-center border rounded-md p-1'>
+                    <BsSearch size={14} className='text-[#6C757D] mt-1 mr-2 ' />
                     <input 
                         type="text" 
-                        placeholder='Search' />
+                        placeholder='Search'
+                        className=' outline-none' />
                 </div>
 
                 <div className='my-10'>

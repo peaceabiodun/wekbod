@@ -16,7 +16,7 @@ const DashboardBody = () => {
     const [tabs, setTabs] = useState(statsTab[0].title);
 
     return ( 
-        <div className=' bg-[#ECFDF3] py-6 px-6 w-full h-[100vh]' >
+        <div className=' bg-[#ECFDF3] py-6 px-6 w-full h-full' >
 
             <div className=''>
                 <h2 className='text-2xl font-semibold mt-[40px]'>Welcome back, Dubem.</h2>
@@ -69,7 +69,7 @@ const DashboardBody = () => {
                 </div>
             </div>
 
-            <div className='bg-white rounded-sm w-full p-5 border'>
+            <div className='bg-white rounded-sm w-full p-3 sm:p-5 border mb-6'>
 
                 {tabs === statsTab[0].title &&      
                     <SavedJobsTab />

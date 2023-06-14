@@ -44,7 +44,8 @@ const ProfileBody = () => {
 
                 </div>
 
-                <div className='p-4'>
+                <div className='p-4 mb-6 md:mb-1'>
+
                     <div className='flex flex-row gap-4 text-[#6C757D] text-sm font-semibold'>
                     {menuTab.map((item)=>(
                         <h2 

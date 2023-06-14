@@ -56,7 +56,7 @@ export const userSidebarLinks =[
 
     {id:1, link: "/dashboard", title: "Dashboard", icon: <MdOutlineDashboard size={22} />},
     {id:2, link: "/profile", title: "Profile", icon: <MdOutlineAccountCircle size={22} />},
-    {id:3, link: "/board", title: "Board", icon: <BsClipboard size={21} />},
+    {id:3, link: "/jobboard", title: "Board", icon: <BsClipboard size={21} />},
     {id:4, link: "/notification", title: "Notifications", icon: <MdNotificationsNone size={23} />},
     {id:5, link: "/settings", title: "Settings", icon: <IoSettingsOutline size={22} />},
 ];

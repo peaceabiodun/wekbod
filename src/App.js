@@ -11,6 +11,7 @@ import PreviewCv from "pages/createProfilePages/previewCv";
 import A4Preview from "pages/createProfilePages/previewCv/a4Preview";
 import UserProfile from "pages/profile";
 import Dashboard from "pages/dashboard";
+import JobBoard from "pages/jobBoard";
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/cv" element={<A4Preview />} />
         <Route path="/profile" element={<UserProfile />} />
         <Route path="/dashboard"  element={<Dashboard />} />
+        <Route path="/jobboard"  element={<JobBoard />} />
       </Routes>
     </Router>
   );

@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { ReactComponent as Logo } from 'assets/icons/mainLogo.svg';
 import { MdOutlineAccountCircle} from "react-icons/md";
 import {RiMenu3Fill} from "react-icons/ri";
-import HomeMenu from '../../components/mobileMenu/homeMenu';
+import HomeMobileMenu from '../../components/mobileMenu/homeMobileMenu';
+
 
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
                 </div>
             </div>
             {openMenu&&
-                <HomeMenu onClose={handleMenuClose} />
+                <HomeMobileMenu onClose={handleMenuClose} />
             }
         </div>
      );
