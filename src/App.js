@@ -12,29 +12,31 @@ import A4Preview from "pages/createProfilePages/previewCv/a4Preview";
 import UserProfile from "pages/profile";
 import Dashboard from "pages/dashboard";
 import JobBoard from "pages/jobBoard";
+import JobListProvider from "components/contextApi/jobListContext";
 
 
 
 function App() {
   return (
-    
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/profilesetup" element={<ProfileSetup />} />
-        <Route path="/contactdetails" element={<ContactDetails />} />
-        <Route path="/experiencedetails" element={<ExperienceDetails />} />
-        <Route path="/projectdetails" element={<ProjectDetails />} />
-        <Route path="/educationdetails" element={<EducationDetails />} />
-        <Route path="/preview-cv" element={<PreviewCv />} />
-        <Route path="/cv" element={<A4Preview />} />
-        <Route path="/profile" element={<UserProfile />} />
-        <Route path="/dashboard"  element={<Dashboard />} />
-        <Route path="/jobboard"  element={<JobBoard />} />
-      </Routes>
-    </Router>
+    <JobListProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profilesetup" element={<ProfileSetup />} />
+          <Route path="/contactdetails" element={<ContactDetails />} />
+          <Route path="/experiencedetails" element={<ExperienceDetails />} />
+          <Route path="/projectdetails" element={<ProjectDetails />} />
+          <Route path="/educationdetails" element={<EducationDetails />} />
+          <Route path="/preview-cv" element={<PreviewCv />} />
+          <Route path="/cv" element={<A4Preview />} />
+          <Route path="/profile" element={<UserProfile />} />
+          <Route path="/dashboard"  element={<Dashboard />} />
+          <Route path="/jobboard"  element={<JobBoard />} />
+        </Routes>
+      </Router>
+      </JobListProvider>
   );
 }
 
