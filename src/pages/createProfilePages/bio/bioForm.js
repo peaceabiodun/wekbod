@@ -38,7 +38,7 @@ const BioForm = ({setProfileState}) => {
                 <img src={DisplayPicture}  alt="/" className='absolute rounded-full mx-7 mt-[70px]'/>
             </div>
 
-            <form onSubmit={handleSubmit} className='mt-[60px] w-[90%]'>
+            <form className='mt-[60px] w-[90%]'>
                 <label htmlFor='title' className='flex flex-col text-[16px]'> Professional Title
                     <input 
                         name='title'
@@ -81,7 +81,7 @@ const BioForm = ({setProfileState}) => {
                 </label>
 
                 <div className='flex justify-end mb-4'>
-                    <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
+                    <button onClick={() => {navigate("/contactdetails");}} className='bg-[#05668D] text-white w-[100px] h-[35px] border mt-3 '>
                         Proceed
                     </button>
                 </div>

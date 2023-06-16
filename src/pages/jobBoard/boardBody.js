@@ -58,7 +58,7 @@ const BoardBody = () => {
                             setOpenJobDetails(true)
                             setSelectedJob(item)
                         }} 
-                        className='flex flex-col bg-white border rounded-md p-2 my-3 mr-3 overflow-hidden text-ellipsis whitespace-nowrap cursor-pointer'>
+                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 overflow-hidden text-ellipsis whitespace-nowrap cursor-pointer'>
                         <div className='flex flex-row whitespace-nowrap' >
                             <img src={JobFrame} alt="/" className='w-[70px]' />
 

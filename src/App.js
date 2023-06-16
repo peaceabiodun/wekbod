@@ -13,6 +13,7 @@ import UserProfile from "pages/profile";
 import Dashboard from "pages/dashboard";
 import JobBoard from "pages/jobBoard";
 import JobListProvider from "components/contextApi/jobListContext";
+import NotificationsPage from "pages/notifications";
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/dashboard"  element={<Dashboard />} />
           <Route path="/jobboard"  element={<JobBoard />} />
+          <Route path="/notification"  element={<NotificationsPage />} />
         </Routes>
       </Router>
       </JobListProvider>

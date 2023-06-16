@@ -77,12 +77,13 @@ const ProjectForm = () => {
 
                 <div className='flex justify-end my-6 gap-2'>
                     <button 
-                        type='submit'  
+                         onClick={() => {navigate("/educationdetails");}}
                         className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
                         Proceed
                     </button>
 
-                    <button  
+                    <button 
+                        onClick={() => {navigate("/educationdetails");}} 
                         className='bg-[white] text-[#05668D] w-[100px] h-[35px] border border-[#05668D]'>
                         Skip
                     </button>

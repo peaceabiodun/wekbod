@@ -113,12 +113,15 @@ const ExperienceForm = () => {
 
                 <div className='flex justify-end my-6 gap-2'>
                     <button 
-                        type='submit'  
+                        type="button"
+                        onClick={() => {navigate("/projectdetails");}}   
                         className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
                         Save
                     </button>
 
-                    <button  
+                    <button 
+                        type="button"
+                        onClick={() => {navigate("/projectdetails");}} 
                         className='bg-[white] text-[#05668D] w-[100px] h-[35px] border border-[#05668D]'>
                         Skip
                     </button>

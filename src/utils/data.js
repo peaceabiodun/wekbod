@@ -172,3 +172,10 @@ export const jobsData= [
     {id:2, title: "backend engr", company: "Amazon", type: "Contract", location:"Ireland", date: "3 days ago"},
     {id:3, title: "React Developer", company: "Huawei", type: "Contract", location:"China", date: "a day ago"}
 ]
+
+export const notificationData =[
+    {id:1, title: "Wekbod updates", description:"Wekbod releases new feature for instant coding tests and results", time: "12:30"},
+    {id:1, title: "Now Hiring", description:"Software engineers in Berlin", time: "12:30"},
+    {id:1, title: "Google updates", description:"Google has a new jo update for you", time: "14:30"},
+    {id:1, title: "Application Opened", description:"Your Job application for LN Global has been opened", time: "10:00"},
+]

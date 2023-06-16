@@ -33,7 +33,7 @@ const ContactForm = ({setProfileState}) => {
                 <ProfileNavigation/>
             </div>
 
-            <form onSubmit={handleSubmit} className='mt-6 w-[90%]'>
+            <form className='mt-6 w-[90%]'>
                 <div className='flex flex-col sm:flex-row w-[100%] gap-4'>
                 <label htmlFor="email" className='flex flex-col text-[16px]  mt-2 sm:w-[50%]' > Email Address
                     <input  
@@ -94,7 +94,7 @@ const ContactForm = ({setProfileState}) => {
                 </label>
 
                 <div className='flex justify-end my-6'>
-                <button type='submit'  className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
+                <button onClick={() => {navigate("/experiencedetails");}}  className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
                     Proceed
                 </button>
                 </div>

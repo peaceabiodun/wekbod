@@ -29,7 +29,7 @@ const Header = () => {
                 <div className='flex'>
                     <Logo />
                     <NavLink to='/' className='hidden sm:flex text-lg text-white mx-5 cursor-pointer '>Home</NavLink>
-                    <NavLink to='/' className='hidden sm:flex text-lg text-white mr-3 cursor-pointer '>Jobs</NavLink>
+                    <NavLink to='/jobboard' className='hidden sm:flex text-lg text-white mr-3 cursor-pointer '>Jobs</NavLink>
                 </div>
                 <div className='hidden sm:flex text-white text-lg pr-5'>
                     <MdOutlineAccountCircle size={30} onClick={() => setOpenDropdown(!openDropdown)} className=' cursor-pointer' />
