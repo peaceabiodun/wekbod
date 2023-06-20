@@ -35,7 +35,7 @@ export const photos =[
 
 
 export const profileLinks = [
-    {id:1, link: "/profilesetup", title: "Bio"},
+    {id:1, link: "/bio", title: "Bio"},
     {id:2, link:"/contactdetails", title: "Contact"},
     {id:3, link:"/experiencedetails", title: "Experience"},
     {id:4, link:"/projectdetails", title: "Projects"},
@@ -62,9 +62,9 @@ export const userSidebarLinks =[
 ];
 
 export const settingsLink =[
-    {id:1, link: "/account-settings", title: "Account"},
-    {id:2, link: "/notifications", title: "Notifications"},
-    {id:3, link: "/teams", title: "Teams"},
+    {id:1, link: "", title: "Account"},
+    {id:2, link: "/notification", title: "Notifications"},
+    {id:3, link: "", title: "Teams"},
 ]
 
 

@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import HomePage from "pages/HomePage";
-import Signup from "pages/loginPage/signup";
-import Login from "pages/loginPage/login";
-import ProfileSetup from "components/profileSetup/profileState";
+import Signup from "pages/auth/signup";
+import Login from "pages/auth/login";
 import ContactDetails from "pages/createProfilePages/contactDetails";
 import ExperienceDetails from "pages/createProfilePages/experience";
 import ProjectDetails from "pages/createProfilePages/projects";
@@ -14,6 +13,8 @@ import Dashboard from "pages/dashboard";
 import JobBoard from "pages/jobBoard";
 import JobListProvider from "components/contextApi/jobListContext";
 import NotificationsPage from "pages/notifications";
+import Settings from "pages/settings";
+import CreateBio from "pages/createProfilePages/bio";
 
 
 
@@ -25,7 +26,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/profilesetup" element={<ProfileSetup />} />
+          <Route path="/bio" element={<CreateBio />} />
           <Route path="/contactdetails" element={<ContactDetails />} />
           <Route path="/experiencedetails" element={<ExperienceDetails />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
@@ -36,6 +37,7 @@ function App() {
           <Route path="/dashboard"  element={<Dashboard />} />
           <Route path="/jobboard"  element={<JobBoard />} />
           <Route path="/notification"  element={<NotificationsPage />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>
       </JobListProvider>

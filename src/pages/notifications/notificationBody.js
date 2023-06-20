@@ -12,7 +12,7 @@ const NotificationBody = () => {
     const [notificationTab, setNotificationTab] = useState(notificationStats[0].title); 
 
     return ( 
-        <div id="scroll-image" className='bg-[#ECFDF3] p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
+        <div className='bg-[#ECFDF3] p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
 
             <div>
                 <h2 className='text-xl font-semibold'>Notifications</h2>

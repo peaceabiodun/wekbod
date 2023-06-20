@@ -37,12 +37,12 @@ const BoardBody = () => {
         };
         fetchJobs();
 
-    }, [])
+    })
    
 
 
     return ( 
-        <div id="scroll-image" className='bg-[#ECFDF3] p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
+        <div  className='bg-[#ECFDF3] p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
             <div className="">
 
                 <div>   
@@ -58,12 +58,15 @@ const BoardBody = () => {
                             setOpenJobDetails(true)
                             setSelectedJob(item)
                         }} 
-                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 overflow-hidden text-ellipsis whitespace-nowrap cursor-pointer'>
+                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 overflow-hidden cursor-pointer'>
                         <div className='flex flex-row whitespace-nowrap' >
                             <img src={JobFrame} alt="/" className='w-[70px]' />
 
                             <div className='flex flex-col justify-center text-xs' >
-                                <p className='text-xs sm:text-sm font-semibold'>{item.title}</p>
+                                <div>
+                                    
+                                </div>
+                                <p className='text-xs sm:text-sm font-semibold  overflow-hidden whitespace-nowrap text-ellipsis' >{item.title}</p>
                                 <p className=' font-medium'>{item.company_name}</p>
                                 <p  className='overflow-hidden text-ellipsis whitespace-nowrap'>{item.location}</p>
                                 <p  className='text-[10px] text-blue-500 '>full-time</p>

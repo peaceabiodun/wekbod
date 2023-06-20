@@ -20,7 +20,7 @@ const Signup = () => {
         
         onSubmit:(actions, values)=> {
             const loginDetails= {name: values.name, email: values.email, password: values.password}
-            navigate('/profilesetup');
+            navigate('/bio');
         },
         validationSchema: Yup.object({
             name: Yup.string().required('name is required'),
