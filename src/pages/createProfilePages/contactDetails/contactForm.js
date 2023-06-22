@@ -94,9 +94,9 @@ const ContactForm = ({setProfileState}) => {
                 </label>
 
                 <div className='flex justify-end my-6'>
-                <button onClick={() => {navigate("/experiencedetails");}}  className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
-                    Proceed
-                </button>
+                    <button onClick={() => {navigate("/experiencedetails");}}  className='bg-[#05668D] text-white w-[100px] h-[35px] border '>
+                        Proceed
+                    </button>
                 </div>
 
             </form>
