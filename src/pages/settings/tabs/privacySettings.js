@@ -40,7 +40,7 @@ const PrivacySettings = () => {
                 </div>
 
                 <div className='flex justify-end my-6'>
-                    <button  className='bg-[#05668D] text-white p-2 border '>
+                    <button  className='bg-white text-[#05668D] p-2 border w-full sm:w-auto '>
                         Set New Password
                     </button>
                 </div>
@@ -52,8 +52,45 @@ const PrivacySettings = () => {
                     </div>
                    
                    <div className='flex justify-end my-6'>
-                        <button className='bg-[#f32121e7] text-white border whitespace-nowrap w-[147px] h-[42px]' >
+                        <button className='bg-[#f32121e7] text-white border whitespace-nowrap w-full sm:w-[147px] h-[42px]' >
                             Delete Account
+                        </button>
+                    </div>
+                </div>
+
+                <div className='mt-8 mb-2' >
+                    <div className='py-4'>
+                        <h2 className=' text-lg font-semibold'>Active sessions</h2>
+                        <p className='text-[#667085] text-sm'>See your logged in sessions from different devices and delete unrecognized or unnecessary sessions</p>
+                    </div>
+
+                    <div className='flex gap-8'>
+                        <div>
+                            <h2 className=' text-sm font-semibold'>Current session</h2>
+                            <p className='text-[#667085] text-sm'>Yes</p>
+                        </div>
+
+                        <div>
+                            <h2 className=' text-sm font-semibold'>Device details</h2>
+                            <p className='text-[#667085] text-sm'>PC / Linux / Chrome 113.0.0</p>
+                        </div>
+                    </div>
+
+                    <div className='flex gap-8 py-4'>
+                        <div className=''>
+                            <h2 className=' text-sm font-semibold'>IP address</h2>
+                            <p className='text-[#667085] text-sm'>133.122.25.145</p>
+                        </div>
+
+                        <div className=''>
+                            <h2 className=' text-sm font-semibold'>Last activity</h2>
+                            <p className='text-[#667085] text-sm'>Lagos - Nigeria, June 20th 2023, 9:41:51 pm</p>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-end my-6'>
+                        <button  className='bg-white text-[#05668D] p-2 border w-full sm:w-auto '>
+                            Log out of session
                         </button>
                     </div>
                 </div>
