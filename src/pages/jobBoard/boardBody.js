@@ -49,7 +49,7 @@ const BoardBody = () => {
                     <p className='text-xl font-semibold'>Recommended Jobs For You</p>
                 </div>
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8  '>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8  w-full'>
 
                     {jobListings.map((item) => (
                     <div 
@@ -58,14 +58,12 @@ const BoardBody = () => {
                             setOpenJobDetails(true)
                             setSelectedJob(item)
                         }} 
-                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 overflow-hidden cursor-pointer'>
-                        <div className='flex flex-row whitespace-nowrap' >
+                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 cursor-pointer w-[300px] grow truncate'>
+                        
+                        <div className='flex ' >
                             <img src={JobFrame} alt="/" className='w-[70px]' />
 
-                            <div className='flex flex-col justify-center text-xs' >
-                                <div>
-                                    
-                                </div>
+                            <div className='flex flex-col justify-center text-xs grow truncate' >
                                 <p className='text-xs sm:text-sm font-semibold  overflow-hidden whitespace-nowrap text-ellipsis' >{item.title}</p>
                                 <p className=' font-medium'>{item.company_name}</p>
                                 <p  className='overflow-hidden text-ellipsis whitespace-nowrap'>{item.location}</p>

@@ -33,17 +33,17 @@ const NotificationBody = () => {
                     </button>
                 </div>
                 ))}
-
+ 
             </div>
 
             {notificationTab === notificationStats[0].title &&
-                <div className='my-4  '>
+                <div className='my-4 pb-8 sm:pb-0 '>
                     <Notification />
                 </div>
             }
            
             {notificationTab === notificationStats[1].title &&
-                <div className='my-4  '>
+                <div className='my-4 pb-8 sm:pb-0 '>
                     <Notification />
                 </div>
             }
