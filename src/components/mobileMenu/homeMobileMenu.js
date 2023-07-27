@@ -9,8 +9,8 @@ const HomeMobileMenu = ({onClose}) => {
                 <IoClose size={26} onClick={onClose} className='' />
             </div>
             <div className='my-3 mx-3 text-[#05668D] text-xl font-medium flex flex-col'>
-                <Link to='' className='py-3 px-2 hover:bg-[#e6e6f1]'>Explore Jobs</Link>
-                <Link to='' className='py-3 px-2 hover:bg-[#e6e6f1]'>Recruiter</Link>
+                <Link to='/' className='py-3 px-2 hover:bg-[#e6e6f1]'>Home</Link>
+                <Link to='/general-jobs' className='py-3 px-2 hover:bg-[#e6e6f1]'>Explore Jobs</Link>
                 <Link to='/signup' className='py-3 px-2 hover:bg-[#e6e6f1]'>Sign up</Link>
                 <Link to='/login' className='py-3 px-2 hover:bg-[#e6e6f1]'>Log in</Link>
             </div>

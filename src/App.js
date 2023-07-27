@@ -15,6 +15,7 @@ import JobListProvider from "components/contextApi/jobListContext";
 import NotificationsPage from "pages/notifications";
 import Settings from "pages/settings";
 import CreateBio from "pages/createProfilePages/bio";
+import GeneralJobs from "components/generalJobs";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/general-jobs" element={<GeneralJobs />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/bio" element={<CreateBio />} />

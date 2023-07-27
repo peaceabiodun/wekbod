@@ -42,7 +42,7 @@ const BoardBody = () => {
 
 
     return ( 
-        <div  className='bg-[#ECFDF3] p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
+        <div  className='bg-[#ECFDF3] p-4 md:p-6 w-full h-[100vh] overflow-auto scroll-smooth'>
             <div className="">
 
                 <div>   
@@ -58,7 +58,7 @@ const BoardBody = () => {
                             setOpenJobDetails(true)
                             setSelectedJob(item)
                         }} 
-                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 cursor-pointer w-[300px] grow truncate'>
+                        className='flex flex-col bg-white hover:bg-[#dae8ff] border rounded-md p-2 my-3 mr-3 cursor-pointer  grow truncate'>
                         
                         <div className='flex ' >
                             <img src={JobFrame} alt="/" className='w-[70px]' />

@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
-
+import { MdArrowBack } from "react-icons/md";
 
 
 const Login = () => {
@@ -29,12 +29,16 @@ const Login = () => {
 
     return ( 
         <div className='w-screen h-screen bg-[#072906] flex items-center justify-center'>
-            <div className='bg-white w-full h-full sm:w-[55%] mdLg:w-[40%] sm:h-[80%] flex flex-col justify-center sm:justify-between'>
+            <div className='bg-white w-full h-full sm:w-[60%] mdLg:w-[40%] sm:h-[80%] flex flex-col sm:justify-center justify-between'>
 
                 <div className='py-4 px-4 '>
-                    <div className='flex flex-col items-center sm:items-start'>
-                    <Logo />
-                    <h2 className='my-4 text-black text-2xl font-bold'>Login</h2>
+                    <Link to={"/"}>
+                        <MdArrowBack size={20} className='my-2 text-[#05668D]' />
+                    </Link>
+                    
+                    <div className='flex flex-col items-center '>
+                        <Logo />
+                        <h2 className='my-4 text-black text-2xl font-bold'>Login</h2>
                     </div>
 
                     <form onSubmit={formik.handleSubmit} className='flex flex-col justify-center items-center pt-4'>

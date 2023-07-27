@@ -3,7 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-
+import { MdArrowBack } from "react-icons/md";
 
 
 
@@ -20,6 +20,7 @@ const Signup = () => {
         
         onSubmit:(actions, values)=> {
             const loginDetails= {name: values.name, email: values.email, password: values.password}
+            localStorage.setItem("userName", values.name);
             navigate('/bio');
         },
         validationSchema: Yup.object({
@@ -32,10 +33,13 @@ const Signup = () => {
 
     return ( 
         <div className='w-screen h-screen bg-[#072906] flex items-center justify-center'>
-            <div className='bg-white w-full h-full sm:w-[55%] mdLg:w-[40%] sm:h-[80%] flex flex-col justify-center sm:justify-between'>
+            <div className='bg-white w-full h-full sm:w-[55%] mdLg:w-[40%] sm:h-[90%] flex flex-col sm:justify-center '>
                 <div className='py-4 px-4 '>
-                    <div className='flex flex-col items-center sm:items-start'>
-                    <Logo />
+                    <Link to={"/"}>
+                        <MdArrowBack size={20} className='my-2 text-[#05668D]' />
+                    </Link>
+                    <div className='flex flex-col items-center '>
+                        <Logo />
                     <h2 className='my-4 text-black text-2xl font-bold'>Sign Up</h2>
                     </div>
 

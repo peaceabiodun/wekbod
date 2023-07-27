@@ -22,7 +22,7 @@ const ContactForm = ({setProfileState}) => {
         <div id='scroll-image' className='bg-[#F9FAFB] w-full h-screen py-4 sm:py-5 px-4 sm:px-11 overflow-y-auto'>
             
             <div className='text-[#05668D] my-2'>
-                <button onClick={() => {navigate("/profilesetup");}} className='flex justify-center items-center w-[80px] h-[35px] border border-[#05668D] '>
+                <button onClick={() => {navigate("/bio")}} className='flex justify-center items-center w-[80px] h-[35px] border border-[#05668D] '>
                     <FaBackward size={12} className='mr-1'/>
                     Back 
                 </button>

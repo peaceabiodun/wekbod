@@ -40,7 +40,7 @@ const UserSidebar = () => {
                 <div className='text-[#6C757D]'>
                     <h2 className=' font-semibold mb-2'>TOOLS</h2>
 
-                    <NavLink to='/' className='flex my-2'>
+                    <NavLink to='' className='flex my-2'>
                         <div className='mr-3 text-[#6C757D]'><MdOutlinePeople size={22} /></div>
                         <p className=''>Invite friend</p>
                     </NavLink>

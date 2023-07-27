@@ -1,7 +1,8 @@
-import DisplayPicture from 'assets/images/Dp.jpg';
+import Placeholder from 'assets/images/placeholder-img.png';
 import ProfileNavigation from 'components/profileNav/profileNav';
 import { useNavigate } from 'react-router';
 import { FaBackward } from "react-icons/fa";
+import { MdEdit } from "react-icons/md";
 
 
 
@@ -35,7 +36,8 @@ const BioForm = ({setProfileState}) => {
             </div>
 
             <div className='bg-[#34A751] w-[90%] h-[180px]'>
-                <img src={DisplayPicture}  alt="/" className='absolute rounded-full mx-7 mt-[70px]'/>
+                <MdEdit size={20} className='float-right text-white cursor-pointer m-2' />
+                <img src={Placeholder}  alt="/" className='absolute rounded-full mx-7 mt-[60px] w-[170px] h-[170px] cursor-pointer'/>
             </div>
 
             <form className='mt-[60px] w-[90%]'>

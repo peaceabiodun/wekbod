@@ -14,6 +14,7 @@ import PendingTab from "./tabs/pendingTab";
 const DashboardBody = () => {
 
     const [tabs, setTabs] = useState(statsTab[0].title);
+    const name = localStorage.getItem("userName")
 
     return ( 
         <div className=' bg-[#ECFDF3] py-6 px-6 w-full h-full' >
