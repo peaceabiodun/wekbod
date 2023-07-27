@@ -22,7 +22,7 @@ const Body = () => {
                     </p>
                     <div className='flex gap-3 mt-3'>
                         <button onClick={() => {navigate("/signup")}} className='bg-[#5925DC] w-[85px] h-[35px] text-white'> Sign Up</button>
-                        <button className=' bg-white w-[120px] h-[35px] border text-[#05668D] '>Explore Jobs</button>
+                        <button onClick={()=> {navigate('/general-jobs')}} className=' bg-white w-[120px] h-[35px] border text-[#05668D] '>Explore Jobs</button>
                     </div>
                 </div>
 
